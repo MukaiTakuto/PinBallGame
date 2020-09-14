@@ -51,7 +51,7 @@ for (int i = 0; i < Input.touchCount; ++i)
                 {
                         SetAngle (this.defaultAngle);
                 }
-        if ((Input.GetTouch(i).phase == TouchPhase.Ended) &&  (Input.GetTouch(i).position.x <= Screen.width / 2) && tag == "RightFripperTag")
+        if ((Input.GetTouch(i).phase == TouchPhase.Ended) &&  (Input.GetTouch(i).position.x >= Screen.width / 2) && tag == "RightFripperTag")
                 {
                         SetAngle (this.defaultAngle);
                 }
