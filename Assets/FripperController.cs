@@ -31,27 +31,27 @@ for (int i = 0; i < Input.touchCount; ++i)
             {
                 if(Input.touchCount > 0)
         {
-        if ((Input.GetTouch(i).phase == TouchPhase.Began) &&  (Input.mousePosition.x <= Screen.width / 2) && (Input.mousePosition.x >= Screen.width / 2) && tag == "LeftFripperTag" && tag == "RightFripperTag")
+        if ((Input.GetTouch(i).phase == TouchPhase.Began) &&  (Input.GetTouch(i).position.x <= Screen.width / 2) && (Input.GetTouch(i).position.x >= Screen.width / 2) && tag == "LeftFripperTag" && tag == "RightFripperTag")
                 {
                         SetAngle (this.flickAngle);
                 }
-                if ((Input.GetTouch(i).phase == TouchPhase.Ended) &&  (Input.mousePosition.x <= Screen.width / 2) &&   (Input.mousePosition.x >= Screen.width / 2) &&tag == "LeftFripperTag" && tag == "RightFripperTag")
+                if ((Input.GetTouch(i).phase == TouchPhase.Ended) &&  (Input.GetTouch(i).position.x <= Screen.width / 2) &&   (Input.GetTouch(i).position.x >= Screen.width / 2) &&tag == "LeftFripperTag" && tag == "RightFripperTag")
                 {
                         SetAngle (this.flickAngle);
                 }
-        if ((Input.GetTouch(i).phase == TouchPhase.Began) &&  (Input.mousePosition.x <= Screen.width / 2) && tag == "LeftFripperTag")
+        if ((Input.GetTouch(i).phase == TouchPhase.Began) &&  (Input.GetTouch(i).position.x <= Screen.width / 2) && tag == "LeftFripperTag")
                 {
                         SetAngle (this.flickAngle);
                 }
-        if ((Input.GetTouch(i).phase == TouchPhase.Began) &&  (Input.mousePosition.x >= Screen.width / 2) && tag == "RightFripperTag")
+        if ((Input.GetTouch(i).phase == TouchPhase.Began) &&  (Input.GetTouch(i).position.x >= Screen.width / 2) && tag == "RightFripperTag")
                 {
                         SetAngle (this.flickAngle);
                 }
-        if ((Input.GetTouch(i).phase == TouchPhase.Ended) &&  (Input.mousePosition.x <= Screen.width / 2) && tag == "LeftFripperTag")
+        if ((Input.GetTouch(i).phase == TouchPhase.Ended) &&  (Input.GetTouch(i).position.x <= Screen.width / 2) && tag == "LeftFripperTag")
                 {
                         SetAngle (this.defaultAngle);
                 }
-        if ((Input.GetTouch(i).phase == TouchPhase.Ended) &&  (Input.mousePosition.x <= Screen.width / 2) && tag == "RightFripperTag")
+        if ((Input.GetTouch(i).phase == TouchPhase.Ended) &&  (Input.GetTouch(i).position.x <= Screen.width / 2) && tag == "RightFripperTag")
                 {
                         SetAngle (this.defaultAngle);
                 }
